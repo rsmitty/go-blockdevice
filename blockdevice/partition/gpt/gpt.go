@@ -173,9 +173,9 @@ func (g *GPT) Write() (err error) {
 		return err
 	}
 
-	if err = g.syncKernelPartitions(); err != nil {
-		return fmt.Errorf("failed to sync kernel partitions: %w", err)
-	}
+	// if err = g.syncKernelPartitions(); err != nil {
+	// 	return fmt.Errorf("failed to sync kernel partitions: %w", err)
+	// }
 
 	return nil
 }
